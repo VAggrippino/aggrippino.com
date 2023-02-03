@@ -2,7 +2,7 @@ import {render, within, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Header from './Header'
 
-it('has the page header', () => {
+it('has the page header with branding and navigation', () => {
   // Arrange
   const {getByRole} = render(<Header />)
   const header = getByRole('banner')
